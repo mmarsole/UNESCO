@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - UNESCO</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Week 10 Assignment - GIS 5547</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.24/"></script>
+</head>
+  
+<body>
+  <div id="viewDiv"></div>
+  <!--A container the button-->
+  <div class="buttonContainer">
+    <button type = "submit" class="clickButton" onclick="openPopup()">About Map</button>
+    <div class="popup" id="popup">
+      <h2>UNESCO World Heritage Sites</h2>
+      <p>This map displays UNESCO World hertiage Sites across the globe.</p>
+      <button type="botton" onclick="closePopup()">Exit</button>
+    </div>
+  </div>
+<script>
+let popup = document.getElementById("popup");
+    
+function openPopup(){
+  popup.classList.add("open-popup");   
+}
+function closePopup(){
+  popup.classList.remove("open-popup");   
+}
+</script>  
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
